@@ -1,0 +1,110 @@
+header {
+  background-color: #EC3A49;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+@media (min-width: 768px) {
+  header{
+    flex-direction: row;
+  } 
+}
+
+header h1 {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 900;
+}
+
+.footer{
+  background-color: #2C2C3B;
+  padding: 3rem;
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+@media (min-width: 768px) {
+    .footer{
+      flex-direction: row;
+    }
+}
+
+.copy p{
+  margin: 0;
+  font-weight: 900;
+}
+
+.creador a{
+  text-decoration: none;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-weight: 900;
+}
+
+.creador a img{
+  width: 30px;
+}
+
+.img-bebida{
+  display: block;
+  margin: 0 auto;
+  border-top-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+
+.bg{
+  border-radius: 2rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.texto{
+  font-size: 2.5rem;
+}
+.texto, .parrafo{
+  color: #0B65C1;
+  font-weight: 900;
+}
+
+.parrafo span{
+  font-size: 1.5rem;
+}
+
+.heading{
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  color: #EC3A49;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.paginador{
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.pagina{
+  text-align: center;
+  margin-top: 1rem;
+  font-weight: 700;
+}
+
+.bold{
+  font-weight: 900;
+}
