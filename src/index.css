@@ -8,6 +8,10 @@ header {
   gap: 2rem;
   justify-content: space-between;
   padding: 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  box-shadow: 0px 10px 18px -7px rgba(0,0,0,0.59);
 }
 
 @media (min-width: 768px) {
@@ -61,6 +65,13 @@ header h1 {
   margin: 0 auto;
   border-top-left-radius: 2rem;
   border-bottom-right-radius: 2rem;
+  width: 350px;
+}
+
+@media (min-width: 768px) {
+    .img-bebida{
+      width: auto;
+    }
 }
 
 .bg{
@@ -107,4 +118,29 @@ header h1 {
 
 .bold{
   font-weight: 900;
+}
+
+.favoritos{
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .favoritos{
+      flex-direction: row;
+    }
+}
+
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #EC3A49;
 }

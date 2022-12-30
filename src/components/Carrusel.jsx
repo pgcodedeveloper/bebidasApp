@@ -29,6 +29,7 @@ const Carrusel = ({bebidas}) => {
                                 className="img-bebida"
                                 src={bebida.strDrinkThumb}
                                 alt={`Imagen bebida ${bebida.strDrink}`}
+                            
                             />
                             
                         </Carousel.Item>

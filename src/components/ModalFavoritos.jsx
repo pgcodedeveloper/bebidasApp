@@ -1,4 +1,4 @@
-import { Modal, Image, Button, Row, Col } from "react-bootstrap"
+import { Modal, Image, Button, Row, Col, CloseButton } from "react-bootstrap"
 import useBebidas from "../hooks/useBebidas"
 import Spinner from "./Spinner";
 import Swal from "sweetalert2"
@@ -19,7 +19,6 @@ const ModalFavoritos = () => {
             timer: 3000
         }).then((result) => {
             if (result.isConfirmed) {
-                handleModalFav();
                 handleEliminarBebida(id);
             }
         })
@@ -30,6 +29,9 @@ const ModalFavoritos = () => {
                 <>
                     <Modal.Header>
                         <Modal.Title>Mis Recetas</Modal.Title>
+                        <CloseButton className="px-3" onClick={() => {
+                            handleModalFav();
+                        }}/>
                     </Modal.Header>
 
                     <Modal.Body>
@@ -41,7 +43,7 @@ const ModalFavoritos = () => {
                                 {bebidasLS.map(bebida => (
                                     <Row key={bebida.id}>
                                         <Col className="mt-5">
-                                            <div className="d-flex gap-4 align-items-center ">
+                                            <div className="favoritos">
                                                 <Image 
                                                     src={bebida.imagen}
                                                     alt={`Imagen receta ${bebida.nombre}`}

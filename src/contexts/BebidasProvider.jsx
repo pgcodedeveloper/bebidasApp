@@ -49,6 +49,7 @@ const BebidasProvider = ({children}) => {
 
 
     const obtenerBebidas = async (datos) => {
+        setPaginaActual(1);
         setCargando(true);
         try {
             const url= `https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=${datos.nombre}&c=${datos.categoria}`;

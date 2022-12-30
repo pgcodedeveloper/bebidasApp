@@ -11,7 +11,7 @@ import ModalFavoritos from "./components/ModalFavoritos"
 
 const AppBebidas = () => {
 
-    const { bebidas, cargando, bebidasRandom, handleModalFav, bebidasLS} = useBebidas();
+    const { bebidas, cargando, bebidasRandom, handleModalFav} = useBebidas();
 
     
     return (

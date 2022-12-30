@@ -34,7 +34,6 @@ const ListadoBebidas = ({bebidas}) => {
             return false;
         }
     }
-    
     return (
         <>
             {bebidas?.length === 0 ? (

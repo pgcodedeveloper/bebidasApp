@@ -1,4 +1,4 @@
-import { Modal, Image, Button } from "react-bootstrap"
+import { Modal, Image, Button, CloseButton } from "react-bootstrap"
 import useBebidas from "../hooks/useBebidas"
 import Spinner from "./Spinner";
 const ModalBebida = () => {
@@ -30,13 +30,18 @@ const ModalBebida = () => {
         <Modal show={modal} onHide={handleModal}>
             {cargandoReceta ? <Spinner /> : (
                 <>
+                    <Modal.Header>
+                        <Modal.Title>{receta.strDrink}</Modal.Title>
+                        <CloseButton className="px-3" onClick={() => {
+                            handleModal();
+                        }}/>
+                    </Modal.Header>
+
                     <Image 
                         src={receta.strDrinkThumb}
                         alt={`Imagen receta ${receta.strDrink}`}
                     />
-                    <Modal.Header>
-                        <Modal.Title>{receta.strDrink}</Modal.Title>
-                    </Modal.Header>
+                    
                     <Modal.Body>
                         <div className="p-3">
                             <h2>Instrucciones</h2>
